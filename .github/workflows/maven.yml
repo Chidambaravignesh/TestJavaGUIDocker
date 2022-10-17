@@ -34,3 +34,10 @@ jobs:
         dockerfile: Dockerfile
         username: ${{secrets.DOCKER_USERNAME}}
         password: ${{secrets.DOCKER_PASSWORD}}
+        
+    - name: Pull Docker Image
+      run: docker pull cvigneshece19/test-java-gui-image:latest
+      
+    - name: Run Docker Image
+      run: docker run cvigneshece19/test-java-gui-image:latest
+      
