@@ -13,6 +13,15 @@
         <maven.compiler.target>11</maven.compiler.target>
   </properties>
   <build>
+      <configuration>
+        <archive>
+          <manifest>
+            <addClasspath>true</addClasspath>
+            <classpathPrefix>lib/</classpathPrefix>
+            <mainClass>com.rntbci.Gui</mainClass>
+          </manifest>
+        </archive>
+      </configuration>
       <finalName>test-java-gui-image</finalName>
   </build>
 </project>
