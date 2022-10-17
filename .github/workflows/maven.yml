@@ -39,5 +39,5 @@ jobs:
       run: docker pull cvigneshece19/test-java-gui-image:latest
       
     - name: Run Docker Image
-      run: docker run cvigneshece19/test-java-gui-image:latest
+      run: docker run -p 8000:8000 cvigneshece19/test-java-gui-image:latest
       
